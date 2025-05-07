@@ -1,11 +1,11 @@
 # Biblioteca-Virtual
 
-##Projeto: Biblioteca de Livros Digitais##
+## Projeto: Biblioteca de Livros Digitais ##
 
-❔##O que é o projeto?##
+❔ O que é o projeto?
 É uma aplicação onde as usuárias podem montar uma biblioteca pessoal, registrando os livros que já leram, estão lendo ou desejam ler. Serve como um espaço organizado para lembrar e compartilhar leituras.
 
-✨ ##O que dá pra fazer na plataforma?##
+✨ O que dá pra fazer na plataforma? 
 
 ->Cadastrar livros com nome, autor, gênero, status (lido, lendo ou desejado), nota e um comentário.
 -> Ver todos os livros em uma lista ou galeria com imagens das capas.
