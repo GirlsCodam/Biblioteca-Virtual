@@ -1,0 +1,142 @@
+.container {
+    /* Define o layout principal com display flex, ocupando toda a altura da tela */
+    display: flex;
+    height: 100vh;
+}
+
+.screenLeft {
+    /* Metade esquerda da tela com gradiente e centralização do conteúdo */
+    flex: 1;
+    background: linear-gradient(to bottom, #320b57, #a855f7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    /* Define a altura da imagem do logotipo como 20% da altura da viewport (tela). 
+    Isso garante que o logotipo seja responsivo e se ajuste proporcionalmente 
+    ao tamanho da tela do usuário. 
+    Uma abordagem útil para manter o layout consistente em diferentes resoluções. */
+    height: 20vh;
+}
+
+.screenRight {
+    /* Metade direita da tela, fundo branco e centralização do conteúdo */
+    flex: 1;
+    background: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.screenRight h2 {
+    /* Título estilizado com gradiente no texto */
+    font-size: 24px;
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom, #320b57, #a855f7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Compatibilidade para navegadores WebKit */
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.inputGroup {
+    /* Container para inputs com ícones, borda inferior para destaque */
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.inputGroup input {
+    /* Input estilizado sem borda, preenchendo o espaço disponível */
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+}
+
+.icon {
+    /* Ícone dentro do grupo de input com cor e espaçamento */
+    margin-right: 10px;
+    color: #8319ad;
+}
+
+.loginButton,
+.registerButton {
+    /* Estilo base compartilhado para botões de login e registro */
+    width: 100%;
+    max-width: 200px;
+    padding: 12px 20px;
+    margin-top: 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.loginButton {
+    /* Gradiente específico para botão de login */
+    background: linear-gradient(90deg, #a855f7, #9333ea);
+}
+
+.registerButton {
+    /* Gradiente específico para botão de registro */
+    background: linear-gradient(90deg, #6b21a8, #4c1d95);
+}
+
+.loginButton:hover,
+.registerButton:hover {
+    /* Animação de escala e sombra ao passar o mouse */
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.loginButton::after,
+.registerButton::after {
+    /* Efeito de brilho ao passar o mouse com pseudoelemento */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: left 0.3s ease;
+}
+
+.loginButton:hover::after,
+.registerButton:hover::after {
+    /* Movimento do brilho de um lado ao outro */
+    left: 100%;
+}
+
+.forgot {
+    /* Link de "esqueceu a senha" com cor e sublinhado */
+    margin-top: 10px;
+    font-size: 14px;
+    color: #72489c;
+    text-decoration: underline;
+}
+
+.forgot:hover {
+    /* Efeito gradiente semelhante ao título, quando passa o mouse */
+    background: linear-gradient(to bottom, #320b57, #a855f7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    cursor: pointer;
+}
